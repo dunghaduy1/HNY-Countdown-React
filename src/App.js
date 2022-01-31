@@ -3,8 +3,8 @@ import "./App.css";
 
 function App() {
   const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    const difference = +new Date(`${year}-2-30`) - +new Date();
+    const target = '2022-2-1';
+    const difference = new Date(target) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -20,7 +20,6 @@ function App() {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,7 +47,7 @@ function App() {
           }}
     >
       <div className="card time-box">
-      {timerComponents.length ? timerComponents : <span>Happy new year</span>}
+      {timerComponents.length ? timerComponents : <span className="hny-text">Chúc mừng năm mới</span>}
       </div>
     </div>
   );
