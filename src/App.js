@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const calculateTimeLeft = () => {
-    const target = '2022-2-1';
+    const target = '2022-7-23';
     const difference = new Date(target) - +new Date();
     let timeLeft = {};
 
@@ -47,7 +47,7 @@ function App() {
           }}
     >
       <div className="card time-box">
-      {timerComponents.length ? timerComponents : <span className="hny-text">Chúc mừng năm mới</span>}
+      {timerComponents.length ? timerComponents : <span className="hny-text">Chúc mừng sinh nhật Dũng Hà Duy</span>}
       </div>
     </div>
   );
