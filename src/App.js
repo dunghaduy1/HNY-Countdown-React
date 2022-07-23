@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const calculateTimeLeft = () => {
-    const target = '2022-7-23';
+    const target = '2022-7-27';
     const difference = new Date(target) - +new Date();
     let timeLeft = {};
 
@@ -43,11 +43,11 @@ function App() {
   return (
     <div className="background"
           style={{ 
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/background.gif'})` 
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/background-1.gif'})`
           }}
     >
       <div className="card time-box">
-      {timerComponents.length ? timerComponents : <span className="hny-text">Chúc mừng sinh nhật Dũng Hà Duy</span>}
+      {timerComponents.length ? timerComponents : <span className="hny-text">Hihi</span>}
       </div>
     </div>
   );
